@@ -1,0 +1,33 @@
+1. se debe crear el proyecto de laravel :
+composer create-project laravel/laravel pyreact
+
+2.cd pyreact luego instalar la libreria UI:
+composer require laravel/ui
+
+3.// Generate basic scaffolding...
+php artisan ui react
+
+npm install
+npm install react-router-dom@5.2.0
+
+npm run watch-poll
+or 
+node_modules/.bin/webpack --watch  --config=node_modules/laravel-mix/setup/webpack.config.js
+
+
+
+4. se crea el controlador
+php artisan make:controller EmployeeController
+
+php artisan make:migration create_role_table
+php artisan make:migration create_employee_table
+
+php artisan migrate
+
+php artisan make:model Employee
+php artisan make:model Role
+
+php artisan make:controller API/EmployeeController
+
+composer require laracasts/utilities
+php artisan vendor:publish --provider="Laracasts\Utilities\JavaScript\JavaScriptServiceProvider"
